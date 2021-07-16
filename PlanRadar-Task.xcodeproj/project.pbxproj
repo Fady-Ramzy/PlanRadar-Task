@@ -18,6 +18,11 @@
 		C7DD62F226A1E33900ACA3A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD62F026A1E33900ACA3A8 /* LaunchScreen.storyboard */; };
 		C7DD62FD26A1E33900ACA3A8 /* PlanRadar_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62FC26A1E33900ACA3A8 /* PlanRadar_TaskTests.swift */; };
 		C7DD630826A1E33900ACA3A8 /* PlanRadar_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD630726A1E33900ACA3A8 /* PlanRadar_TaskUITests.swift */; };
+		C7DD631E26A2256100ACA3A8 /* CitiesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD631D26A2256100ACA3A8 /* CitiesRouter.swift */; };
+		C7DD632026A2257100ACA3A8 /* CitiesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD631F26A2257100ACA3A8 /* CitiesConfigurator.swift */; };
+		C7DD632626A226E100ACA3A8 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD632526A226E100ACA3A8 /* Configurator.swift */; };
+		C7DD632826A226EA00ACA3A8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD632726A226EA00ACA3A8 /* Router.swift */; };
+		C7DD632B26A2274600ACA3A8 /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD632A26A2274600ACA3A8 /* NavigationRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,11 @@
 		C7DD630326A1E33900ACA3A8 /* PlanRadar-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlanRadar-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD630726A1E33900ACA3A8 /* PlanRadar_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanRadar_TaskUITests.swift; sourceTree = "<group>"; };
 		C7DD630926A1E33900ACA3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7DD631D26A2256100ACA3A8 /* CitiesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRouter.swift; sourceTree = "<group>"; };
+		C7DD631F26A2257100ACA3A8 /* CitiesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesConfigurator.swift; sourceTree = "<group>"; };
+		C7DD632526A226E100ACA3A8 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
+		C7DD632726A226EA00ACA3A8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		C7DD632A26A2274600ACA3A8 /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
 		EE4BCC5316D724018A064D28 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task-PlanRadar-TaskUITests/Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +149,8 @@
 		C7DD62E426A1E33700ACA3A8 /* PlanRadar-Task */ = {
 			isa = PBXGroup;
 			children = (
+				C7DD632126A226A600ACA3A8 /* Core */,
+				C7DD631726A224EA00ACA3A8 /* Modules */,
 				C7DD631526A21F3400ACA3A8 /* App */,
 				C7DD62E926A1E33700ACA3A8 /* ViewController.swift */,
 				C7DD62EB26A1E33700ACA3A8 /* Main.storyboard */,
@@ -174,6 +186,97 @@
 				C7DD62E726A1E33700ACA3A8 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		C7DD631726A224EA00ACA3A8 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD631C26A2254700ACA3A8 /* Cities */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		C7DD631826A224F900ACA3A8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		C7DD631926A224FE00ACA3A8 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		C7DD631A26A2250800ACA3A8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD631D26A2256100ACA3A8 /* CitiesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C7DD631B26A2251000ACA3A8 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD631F26A2257100ACA3A8 /* CitiesConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		C7DD631C26A2254700ACA3A8 /* Cities */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD631A26A2250800ACA3A8 /* Router */,
+				C7DD631B26A2251000ACA3A8 /* Configurator */,
+				C7DD631826A224F900ACA3A8 /* List */,
+				C7DD631926A224FE00ACA3A8 /* Details */,
+			);
+			path = Cities;
+			sourceTree = "<group>";
+		};
+		C7DD632126A226A600ACA3A8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD632326A226B500ACA3A8 /* Protocols */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C7DD632226A226AC00ACA3A8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD632726A226EA00ACA3A8 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C7DD632326A226B500ACA3A8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD632926A2272F00ACA3A8 /* NavigationRoute */,
+				C7DD632426A226C300ACA3A8 /* Configurator */,
+				C7DD632226A226AC00ACA3A8 /* Router */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C7DD632426A226C300ACA3A8 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD632526A226E100ACA3A8 /* Configurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		C7DD632926A2272F00ACA3A8 /* NavigationRoute */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD632A26A2274600ACA3A8 /* NavigationRoute.swift */,
+			);
+			path = NavigationRoute;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,8 +518,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7DD62EA26A1E33700ACA3A8 /* ViewController.swift in Sources */,
+				C7DD632026A2257100ACA3A8 /* CitiesConfigurator.swift in Sources */,
 				C7DD62E626A1E33700ACA3A8 /* AppDelegate.swift in Sources */,
+				C7DD632826A226EA00ACA3A8 /* Router.swift in Sources */,
 				C7DD62E826A1E33700ACA3A8 /* SceneDelegate.swift in Sources */,
+				C7DD632626A226E100ACA3A8 /* Configurator.swift in Sources */,
+				C7DD631E26A2256100ACA3A8 /* CitiesRouter.swift in Sources */,
+				C7DD632B26A2274600ACA3A8 /* NavigationRoute.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
