@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31382E702D0C4C4BFAB35CF2 /* libPods-PlanRadar-Task.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBCEB3E9BB6E23AA9933A24 /* libPods-PlanRadar-Task.a */; };
+		34710C46262849F5F001454E /* libPods-PlanRadar-Task-PlanRadar-TaskUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811B176994487856E368726 /* libPods-PlanRadar-Task-PlanRadar-TaskUITests.a */; };
+		A221E47DA8AFA991B7530424 /* libPods-PlanRadar-TaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 370E6CCD9D1383D070B0D62A /* libPods-PlanRadar-TaskTests.a */; };
 		C7DD62E626A1E33700ACA3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */; };
 		C7DD62E826A1E33700ACA3A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E726A1E33700ACA3A8 /* SceneDelegate.swift */; };
 		C7DD62EA26A1E33700ACA3A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E926A1E33700ACA3A8 /* ViewController.swift */; };
@@ -35,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C3ABF436BCF6B50E68C9006 /* Pods-PlanRadar-Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task.release.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task/Pods-PlanRadar-Task.release.xcconfig"; sourceTree = "<group>"; };
+		370E6CCD9D1383D070B0D62A /* libPods-PlanRadar-TaskTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlanRadar-TaskTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3811B176994487856E368726 /* libPods-PlanRadar-Task-PlanRadar-TaskUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlanRadar-Task-PlanRadar-TaskUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EBCEB3E9BB6E23AA9933A24 /* libPods-PlanRadar-Task.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PlanRadar-Task.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F29FC28504842849A4BCCE /* Pods-PlanRadar-TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-TaskTests.release.xcconfig"; path = "Target Support Files/Pods-PlanRadar-TaskTests/Pods-PlanRadar-TaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		722B7ED9BFEA9EAEB2B4FA10 /* Pods-PlanRadar-TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadar-TaskTests/Pods-PlanRadar-TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9569F11EE33ECDD9826E6D57 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task-PlanRadar-TaskUITests/Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		969753BA5C5081ABDA5179BC /* Pods-PlanRadar-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task/Pods-PlanRadar-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		C7DD62E226A1E33700ACA3A8 /* PlanRadar-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlanRadar-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7DD62E726A1E33700ACA3A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		C7DD630326A1E33900ACA3A8 /* PlanRadar-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PlanRadar-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD630726A1E33900ACA3A8 /* PlanRadar_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanRadar_TaskUITests.swift; sourceTree = "<group>"; };
 		C7DD630926A1E33900ACA3A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4BCC5316D724018A064D28 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task-PlanRadar-TaskUITests/Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31382E702D0C4C4BFAB35CF2 /* libPods-PlanRadar-Task.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A221E47DA8AFA991B7530424 /* libPods-PlanRadar-TaskTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34710C46262849F5F001454E /* libPods-PlanRadar-Task-PlanRadar-TaskUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53919D622815D9ECC14B73A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EBCEB3E9BB6E23AA9933A24 /* libPods-PlanRadar-Task.a */,
+				3811B176994487856E368726 /* libPods-PlanRadar-Task-PlanRadar-TaskUITests.a */,
+				370E6CCD9D1383D070B0D62A /* libPods-PlanRadar-TaskTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FF5133B2693368F97161015 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				969753BA5C5081ABDA5179BC /* Pods-PlanRadar-Task.debug.xcconfig */,
+				1C3ABF436BCF6B50E68C9006 /* Pods-PlanRadar-Task.release.xcconfig */,
+				9569F11EE33ECDD9826E6D57 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig */,
+				EE4BCC5316D724018A064D28 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig */,
+				722B7ED9BFEA9EAEB2B4FA10 /* Pods-PlanRadar-TaskTests.debug.xcconfig */,
+				66F29FC28504842849A4BCCE /* Pods-PlanRadar-TaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C7DD62D926A1E33700ACA3A8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				C7DD62FB26A1E33900ACA3A8 /* PlanRadar-TaskTests */,
 				C7DD630626A1E33900ACA3A8 /* PlanRadar-TaskUITests */,
 				C7DD62E326A1E33700ACA3A8 /* Products */,
+				6FF5133B2693368F97161015 /* Pods */,
+				53919D622815D9ECC14B73A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +139,7 @@
 		C7DD62E426A1E33700ACA3A8 /* PlanRadar-Task */ = {
 			isa = PBXGroup;
 			children = (
-				C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */,
-				C7DD62E726A1E33700ACA3A8 /* SceneDelegate.swift */,
+				C7DD631526A21F3400ACA3A8 /* App */,
 				C7DD62E926A1E33700ACA3A8 /* ViewController.swift */,
 				C7DD62EB26A1E33700ACA3A8 /* Main.storyboard */,
 				C7DD62EE26A1E33900ACA3A8 /* Assets.xcassets */,
@@ -128,6 +167,15 @@
 			path = "PlanRadar-TaskUITests";
 			sourceTree = "<group>";
 		};
+		C7DD631526A21F3400ACA3A8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */,
+				C7DD62E726A1E33700ACA3A8 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7DD630C26A1E33900ACA3A8 /* Build configuration list for PBXNativeTarget "PlanRadar-Task" */;
 			buildPhases = (
+				4280DA9E50D1D2CA3213F9B4 /* [CP] Check Pods Manifest.lock */,
 				C7DD62DE26A1E33700ACA3A8 /* Sources */,
 				C7DD62DF26A1E33700ACA3A8 /* Frameworks */,
 				C7DD62E026A1E33700ACA3A8 /* Resources */,
+				6DAE7B4E79ED16C97BE1E0B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7DD630F26A1E33900ACA3A8 /* Build configuration list for PBXNativeTarget "PlanRadar-TaskTests" */;
 			buildPhases = (
+				49088DEA28D36437C9719DFF /* [CP] Check Pods Manifest.lock */,
 				C7DD62F426A1E33900ACA3A8 /* Sources */,
 				C7DD62F526A1E33900ACA3A8 /* Frameworks */,
 				C7DD62F626A1E33900ACA3A8 /* Resources */,
@@ -170,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7DD631226A1E33900ACA3A8 /* Build configuration list for PBXNativeTarget "PlanRadar-TaskUITests" */;
 			buildPhases = (
+				8B7EA74CD720C6FF9727295C /* [CP] Check Pods Manifest.lock */,
 				C7DD62FF26A1E33900ACA3A8 /* Sources */,
 				C7DD630026A1E33900ACA3A8 /* Frameworks */,
 				C7DD630126A1E33900ACA3A8 /* Resources */,
+				23F80653413D707ABDEFCDAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +305,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23F80653413D707ABDEFCDAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanRadar-Task-PlanRadar-TaskUITests/Pods-PlanRadar-Task-PlanRadar-TaskUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanRadar-Task-PlanRadar-TaskUITests/Pods-PlanRadar-Task-PlanRadar-TaskUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlanRadar-Task-PlanRadar-TaskUITests/Pods-PlanRadar-Task-PlanRadar-TaskUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4280DA9E50D1D2CA3213F9B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlanRadar-Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49088DEA28D36437C9719DFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlanRadar-TaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DAE7B4E79ED16C97BE1E0B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanRadar-Task/Pods-PlanRadar-Task-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlanRadar-Task/Pods-PlanRadar-Task-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlanRadar-Task/Pods-PlanRadar-Task-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B7EA74CD720C6FF9727295C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlanRadar-Task-PlanRadar-TaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C7DD62DE26A1E33700ACA3A8 /* Sources */ = {
@@ -433,6 +589,7 @@
 		};
 		C7DD630D26A1E33900ACA3A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 969753BA5C5081ABDA5179BC /* Pods-PlanRadar-Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +608,7 @@
 		};
 		C7DD630E26A1E33900ACA3A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3ABF436BCF6B50E68C9006 /* Pods-PlanRadar-Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +627,7 @@
 		};
 		C7DD631026A1E33900ACA3A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722B7ED9BFEA9EAEB2B4FA10 /* Pods-PlanRadar-TaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +649,7 @@
 		};
 		C7DD631126A1E33900ACA3A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66F29FC28504842849A4BCCE /* Pods-PlanRadar-TaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +671,7 @@
 		};
 		C7DD631326A1E33900ACA3A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9569F11EE33ECDD9826E6D57 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +691,7 @@
 		};
 		C7DD631426A1E33900ACA3A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4BCC5316D724018A064D28 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
