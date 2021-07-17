@@ -11,6 +11,9 @@
 		34710C46262849F5F001454E /* libPods-PlanRadar-Task-PlanRadar-TaskUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811B176994487856E368726 /* libPods-PlanRadar-Task-PlanRadar-TaskUITests.a */; };
 		A221E47DA8AFA991B7530424 /* libPods-PlanRadar-TaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 370E6CCD9D1383D070B0D62A /* libPods-PlanRadar-TaskTests.a */; };
 		C793C3F626A32557008DAAB8 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C793C3F526A32557008DAAB8 /* RootRouter.swift */; };
+		C793C3FB26A33445008DAAB8 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C793C3FA26A33445008DAAB8 /* APIClient.m */; };
+		C793C3FF26A36C17008DAAB8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C793C3FE26A36C17008DAAB8 /* Request.swift */; };
+		C793C40226A384E7008DAAB8 /* CitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C793C40126A384E7008DAAB8 /* CitiesRequest.swift */; };
 		C7DD62E626A1E33700ACA3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */; };
 		C7DD62EA26A1E33700ACA3A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E926A1E33700ACA3A8 /* ViewController.swift */; };
 		C7DD62ED26A1E33700ACA3A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD62EB26A1E33700ACA3A8 /* Main.storyboard */; };
@@ -60,6 +63,11 @@
 		9569F11EE33ECDD9826E6D57 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task-PlanRadar-TaskUITests/Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		969753BA5C5081ABDA5179BC /* Pods-PlanRadar-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task/Pods-PlanRadar-Task.debug.xcconfig"; sourceTree = "<group>"; };
 		C793C3F526A32557008DAAB8 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		C793C3F826A33445008DAAB8 /* PlanRadar-Task-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlanRadar-Task-Bridging-Header.h"; sourceTree = "<group>"; };
+		C793C3F926A33445008DAAB8 /* APIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		C793C3FA26A33445008DAAB8 /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		C793C3FE26A36C17008DAAB8 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C793C40126A384E7008DAAB8 /* CitiesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRequest.swift; sourceTree = "<group>"; };
 		C7DD62E226A1E33700ACA3A8 /* PlanRadar-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlanRadar-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7DD62E926A1E33700ACA3A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +154,41 @@
 				C793C3F526A32557008DAAB8 /* RootRouter.swift */,
 			);
 			path = RootRouter;
+			sourceTree = "<group>";
+		};
+		C793C3F726A3341E008DAAB8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C793C3FD26A36C05008DAAB8 /* APIClient */,
+				C793C3FC26A36BFA008DAAB8 /* Request */,
+				C793C3F826A33445008DAAB8 /* PlanRadar-Task-Bridging-Header.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C793C3FC26A36BFA008DAAB8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C793C3FE26A36C17008DAAB8 /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		C793C3FD26A36C05008DAAB8 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				C793C3F926A33445008DAAB8 /* APIClient.h */,
+				C793C3FA26A33445008DAAB8 /* APIClient.m */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		C793C40026A384D7008DAAB8 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				C793C40126A384E7008DAAB8 /* CitiesRequest.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		C7DD62D926A1E33700ACA3A8 = {
@@ -258,6 +301,7 @@
 		C7DD631C26A2254700ACA3A8 /* Cities */ = {
 			isa = PBXGroup;
 			children = (
+				C793C40026A384D7008DAAB8 /* Request */,
 				C7DD631A26A2250800ACA3A8 /* Router */,
 				C7DD631B26A2251000ACA3A8 /* Configurator */,
 				C7DD634426A2424F00ACA3A8 /* Repository */,
@@ -270,6 +314,7 @@
 		C7DD632126A226A600ACA3A8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				C793C3F726A3341E008DAAB8 /* Network */,
 				C793C3F426A32544008DAAB8 /* RootRouter */,
 				C7DD632326A226B500ACA3A8 /* Protocols */,
 			);
@@ -447,6 +492,7 @@
 				TargetAttributes = {
 					C7DD62E126A1E33700ACA3A8 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					C7DD62F726A1E33900ACA3A8 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -616,8 +662,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7DD634326A231FB00ACA3A8 /* CityDetailsViewModel.swift in Sources */,
+				C793C3FF26A36C17008DAAB8 /* Request.swift in Sources */,
 				C793C3F626A32557008DAAB8 /* RootRouter.swift in Sources */,
 				C7DD62EA26A1E33700ACA3A8 /* ViewController.swift in Sources */,
+				C793C40226A384E7008DAAB8 /* CitiesRequest.swift in Sources */,
 				C7DD634026A231DB00ACA3A8 /* CitiesListViewModel.swift in Sources */,
 				C7DD634626A2428400ACA3A8 /* CitiesRepository.swift in Sources */,
 				C7DD632026A2257100ACA3A8 /* CitiesConfigurator.swift in Sources */,
@@ -625,6 +673,7 @@
 				C7DD62E626A1E33700ACA3A8 /* AppDelegate.swift in Sources */,
 				C7DD632826A226EA00ACA3A8 /* Router.swift in Sources */,
 				C7DD632626A226E100ACA3A8 /* Configurator.swift in Sources */,
+				C793C3FB26A33445008DAAB8 /* APIClient.m in Sources */,
 				C7DD631E26A2256100ACA3A8 /* CitiesRouter.swift in Sources */,
 				C7DD634D26A249B700ACA3A8 /* ViewLifeCycleProtocol.swift in Sources */,
 				C7DD632B26A2274600ACA3A8 /* NavigationRoute.swift in Sources */,
@@ -805,6 +854,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "PlanRadar-Task/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -813,6 +863,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fadyramzy.PlanRadar-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlanRadar-Task/Core/Network/PlanRadar-Task-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -824,6 +876,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "PlanRadar-Task/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -832,6 +885,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fadyramzy.PlanRadar-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlanRadar-Task/Core/Network/PlanRadar-Task-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
