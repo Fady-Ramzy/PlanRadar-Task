@@ -10,8 +10,8 @@
 		31382E702D0C4C4BFAB35CF2 /* libPods-PlanRadar-Task.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBCEB3E9BB6E23AA9933A24 /* libPods-PlanRadar-Task.a */; };
 		34710C46262849F5F001454E /* libPods-PlanRadar-Task-PlanRadar-TaskUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811B176994487856E368726 /* libPods-PlanRadar-Task-PlanRadar-TaskUITests.a */; };
 		A221E47DA8AFA991B7530424 /* libPods-PlanRadar-TaskTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 370E6CCD9D1383D070B0D62A /* libPods-PlanRadar-TaskTests.a */; };
+		C793C3F626A32557008DAAB8 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C793C3F526A32557008DAAB8 /* RootRouter.swift */; };
 		C7DD62E626A1E33700ACA3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */; };
-		C7DD62E826A1E33700ACA3A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E726A1E33700ACA3A8 /* SceneDelegate.swift */; };
 		C7DD62EA26A1E33700ACA3A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E926A1E33700ACA3A8 /* ViewController.swift */; };
 		C7DD62ED26A1E33700ACA3A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD62EB26A1E33700ACA3A8 /* Main.storyboard */; };
 		C7DD62EF26A1E33900ACA3A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7DD62EE26A1E33900ACA3A8 /* Assets.xcassets */; };
@@ -23,6 +23,14 @@
 		C7DD632626A226E100ACA3A8 /* Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD632526A226E100ACA3A8 /* Configurator.swift */; };
 		C7DD632826A226EA00ACA3A8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD632726A226EA00ACA3A8 /* Router.swift */; };
 		C7DD632B26A2274600ACA3A8 /* NavigationRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD632A26A2274600ACA3A8 /* NavigationRoute.swift */; };
+		C7DD633C26A2316600ACA3A8 /* CityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD633A26A2316600ACA3A8 /* CityDetailsViewController.swift */; };
+		C7DD633D26A2316600ACA3A8 /* CityDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7DD633B26A2316600ACA3A8 /* CityDetailsViewController.xib */; };
+		C7DD634026A231DB00ACA3A8 /* CitiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD633F26A231DB00ACA3A8 /* CitiesListViewModel.swift */; };
+		C7DD634326A231FB00ACA3A8 /* CityDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD634226A231FB00ACA3A8 /* CityDetailsViewModel.swift */; };
+		C7DD634626A2428400ACA3A8 /* CitiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD634526A2428400ACA3A8 /* CitiesRepository.swift */; };
+		C7DD634926A244E700ACA3A8 /* CitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD634726A244E700ACA3A8 /* CitiesListViewController.swift */; };
+		C7DD634A26A244E700ACA3A8 /* CitiesListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7DD634826A244E700ACA3A8 /* CitiesListViewController.xib */; };
+		C7DD634D26A249B700ACA3A8 /* ViewLifeCycleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD634C26A249B700ACA3A8 /* ViewLifeCycleProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +59,9 @@
 		722B7ED9BFEA9EAEB2B4FA10 /* Pods-PlanRadar-TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadar-TaskTests/Pods-PlanRadar-TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9569F11EE33ECDD9826E6D57 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task-PlanRadar-TaskUITests/Pods-PlanRadar-Task-PlanRadar-TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		969753BA5C5081ABDA5179BC /* Pods-PlanRadar-Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task.debug.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task/Pods-PlanRadar-Task.debug.xcconfig"; sourceTree = "<group>"; };
+		C793C3F526A32557008DAAB8 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		C7DD62E226A1E33700ACA3A8 /* PlanRadar-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlanRadar-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7DD62E726A1E33700ACA3A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C7DD62E926A1E33700ACA3A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7DD62EC26A1E33700ACA3A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7DD62EE26A1E33900ACA3A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +78,14 @@
 		C7DD632526A226E100ACA3A8 /* Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurator.swift; sourceTree = "<group>"; };
 		C7DD632726A226EA00ACA3A8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		C7DD632A26A2274600ACA3A8 /* NavigationRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoute.swift; sourceTree = "<group>"; };
+		C7DD633A26A2316600ACA3A8 /* CityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewController.swift; sourceTree = "<group>"; };
+		C7DD633B26A2316600ACA3A8 /* CityDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityDetailsViewController.xib; sourceTree = "<group>"; };
+		C7DD633F26A231DB00ACA3A8 /* CitiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewModel.swift; sourceTree = "<group>"; };
+		C7DD634226A231FB00ACA3A8 /* CityDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailsViewModel.swift; sourceTree = "<group>"; };
+		C7DD634526A2428400ACA3A8 /* CitiesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRepository.swift; sourceTree = "<group>"; };
+		C7DD634726A244E700ACA3A8 /* CitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewController.swift; sourceTree = "<group>"; };
+		C7DD634826A244E700ACA3A8 /* CitiesListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesListViewController.xib; sourceTree = "<group>"; };
+		C7DD634C26A249B700ACA3A8 /* ViewLifeCycleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLifeCycleProtocol.swift; sourceTree = "<group>"; };
 		EE4BCC5316D724018A064D28 /* Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-PlanRadar-Task-PlanRadar-TaskUITests/Pods-PlanRadar-Task-PlanRadar-TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +140,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C793C3F426A32544008DAAB8 /* RootRouter */ = {
+			isa = PBXGroup;
+			children = (
+				C793C3F526A32557008DAAB8 /* RootRouter.swift */,
+			);
+			path = RootRouter;
+			sourceTree = "<group>";
+		};
 		C7DD62D926A1E33700ACA3A8 = {
 			isa = PBXGroup;
 			children = (
@@ -149,9 +173,9 @@
 		C7DD62E426A1E33700ACA3A8 /* PlanRadar-Task */ = {
 			isa = PBXGroup;
 			children = (
-				C7DD632126A226A600ACA3A8 /* Core */,
-				C7DD631726A224EA00ACA3A8 /* Modules */,
 				C7DD631526A21F3400ACA3A8 /* App */,
+				C7DD631726A224EA00ACA3A8 /* Modules */,
+				C7DD632126A226A600ACA3A8 /* Core */,
 				C7DD62E926A1E33700ACA3A8 /* ViewController.swift */,
 				C7DD62EB26A1E33700ACA3A8 /* Main.storyboard */,
 				C7DD62EE26A1E33900ACA3A8 /* Assets.xcassets */,
@@ -183,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */,
-				C7DD62E726A1E33700ACA3A8 /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -199,6 +222,9 @@
 		C7DD631826A224F900ACA3A8 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				C7DD632C26A22D6C00ACA3A8 /* View */,
+				C7DD632D26A22D7900ACA3A8 /* Controller */,
+				C7DD633E26A231C600ACA3A8 /* ViewModel */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -206,6 +232,9 @@
 		C7DD631926A224FE00ACA3A8 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				C7DD633926A2314D00ACA3A8 /* View */,
+				C7DD633026A22D8B00ACA3A8 /* Controller */,
+				C7DD634126A231E600ACA3A8 /* ViewModel */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -231,6 +260,7 @@
 			children = (
 				C7DD631A26A2250800ACA3A8 /* Router */,
 				C7DD631B26A2251000ACA3A8 /* Configurator */,
+				C7DD634426A2424F00ACA3A8 /* Repository */,
 				C7DD631826A224F900ACA3A8 /* List */,
 				C7DD631926A224FE00ACA3A8 /* Details */,
 			);
@@ -240,6 +270,7 @@
 		C7DD632126A226A600ACA3A8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				C793C3F426A32544008DAAB8 /* RootRouter */,
 				C7DD632326A226B500ACA3A8 /* Protocols */,
 			);
 			path = Core;
@@ -256,6 +287,7 @@
 		C7DD632326A226B500ACA3A8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				C7DD634B26A2498900ACA3A8 /* ViewLifeCycleProtocol */,
 				C7DD632926A2272F00ACA3A8 /* NavigationRoute */,
 				C7DD632426A226C300ACA3A8 /* Configurator */,
 				C7DD632226A226AC00ACA3A8 /* Router */,
@@ -277,6 +309,70 @@
 				C7DD632A26A2274600ACA3A8 /* NavigationRoute.swift */,
 			);
 			path = NavigationRoute;
+			sourceTree = "<group>";
+		};
+		C7DD632C26A22D6C00ACA3A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD634826A244E700ACA3A8 /* CitiesListViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7DD632D26A22D7900ACA3A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD634726A244E700ACA3A8 /* CitiesListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C7DD633026A22D8B00ACA3A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD633A26A2316600ACA3A8 /* CityDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C7DD633926A2314D00ACA3A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD633B26A2316600ACA3A8 /* CityDetailsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7DD633E26A231C600ACA3A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD633F26A231DB00ACA3A8 /* CitiesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7DD634126A231E600ACA3A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD634226A231FB00ACA3A8 /* CityDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7DD634426A2424F00ACA3A8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD634526A2428400ACA3A8 /* CitiesRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C7DD634B26A2498900ACA3A8 /* ViewLifeCycleProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				C7DD634C26A249B700ACA3A8 /* ViewLifeCycleProtocol.swift */,
+			);
+			path = ViewLifeCycleProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,8 +483,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7DD634A26A244E700ACA3A8 /* CitiesListViewController.xib in Resources */,
 				C7DD62F226A1E33900ACA3A8 /* LaunchScreen.storyboard in Resources */,
 				C7DD62EF26A1E33900ACA3A8 /* Assets.xcassets in Resources */,
+				C7DD633D26A2316600ACA3A8 /* CityDetailsViewController.xib in Resources */,
 				C7DD62ED26A1E33700ACA3A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,14 +615,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7DD634326A231FB00ACA3A8 /* CityDetailsViewModel.swift in Sources */,
+				C793C3F626A32557008DAAB8 /* RootRouter.swift in Sources */,
 				C7DD62EA26A1E33700ACA3A8 /* ViewController.swift in Sources */,
+				C7DD634026A231DB00ACA3A8 /* CitiesListViewModel.swift in Sources */,
+				C7DD634626A2428400ACA3A8 /* CitiesRepository.swift in Sources */,
 				C7DD632026A2257100ACA3A8 /* CitiesConfigurator.swift in Sources */,
+				C7DD633C26A2316600ACA3A8 /* CityDetailsViewController.swift in Sources */,
 				C7DD62E626A1E33700ACA3A8 /* AppDelegate.swift in Sources */,
 				C7DD632826A226EA00ACA3A8 /* Router.swift in Sources */,
-				C7DD62E826A1E33700ACA3A8 /* SceneDelegate.swift in Sources */,
 				C7DD632626A226E100ACA3A8 /* Configurator.swift in Sources */,
 				C7DD631E26A2256100ACA3A8 /* CitiesRouter.swift in Sources */,
+				C7DD634D26A249B700ACA3A8 /* ViewLifeCycleProtocol.swift in Sources */,
 				C7DD632B26A2274600ACA3A8 /* NavigationRoute.swift in Sources */,
+				C7DD634926A244E700ACA3A8 /* CitiesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

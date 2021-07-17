@@ -10,10 +10,15 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK: - Properties
+    
+    var window: UIWindow?
+    
     // MARK: - Methods
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        setupRootViewController()
+        
         return true
     }
 
@@ -25,7 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+    // MARK: - Methods
+    
+    func setupRootViewController() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = RootRouter.root.destinationViewController
+        window?.makeKeyAndVisible()
     }
 }
 

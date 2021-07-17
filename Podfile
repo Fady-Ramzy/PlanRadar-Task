@@ -6,7 +6,7 @@ target 'PlanRadar-Task' do
 	pod 'SVProgressHUD', '2.2.5'
 	pod 'AFNetworking' , '4.0.1' 
 	pod 'RxSwift', '6.2.0'
-    	pod 'RxCocoa', '6.2.0'
+  pod 'RxCocoa', '6.2.0'
 
   target 'PlanRadar-TaskTests' do
     inherit! :search_paths
