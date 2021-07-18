@@ -14,6 +14,7 @@
 		C793C3FB26A33445008DAAB8 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C793C3FA26A33445008DAAB8 /* APIClient.m */; };
 		C793C3FF26A36C17008DAAB8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C793C3FE26A36C17008DAAB8 /* Request.swift */; };
 		C793C40226A384E7008DAAB8 /* CitiesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C793C40126A384E7008DAAB8 /* CitiesRequest.swift */; };
+		C79E6A3D26A3A64800A1A994 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E6A3C26A3A64800A1A994 /* SceneDelegate.swift */; };
 		C7DD62E626A1E33700ACA3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */; };
 		C7DD62EA26A1E33700ACA3A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E926A1E33700ACA3A8 /* ViewController.swift */; };
 		C7DD62ED26A1E33700ACA3A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD62EB26A1E33700ACA3A8 /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		C793C3FA26A33445008DAAB8 /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		C793C3FE26A36C17008DAAB8 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		C793C40126A384E7008DAAB8 /* CitiesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRequest.swift; sourceTree = "<group>"; };
+		C79E6A3C26A3A64800A1A994 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C7DD62E226A1E33700ACA3A8 /* PlanRadar-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlanRadar-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7DD62E926A1E33700ACA3A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		C7DD631526A21F3400ACA3A8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				C79E6A3C26A3A64800A1A994 /* SceneDelegate.swift */,
 				C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */,
 			);
 			path = App;
@@ -672,6 +675,7 @@
 				C7DD633C26A2316600ACA3A8 /* CityDetailsViewController.swift in Sources */,
 				C7DD62E626A1E33700ACA3A8 /* AppDelegate.swift in Sources */,
 				C7DD632826A226EA00ACA3A8 /* Router.swift in Sources */,
+				C79E6A3D26A3A64800A1A994 /* SceneDelegate.swift in Sources */,
 				C7DD632626A226E100ACA3A8 /* Configurator.swift in Sources */,
 				C793C3FB26A33445008DAAB8 /* APIClient.m in Sources */,
 				C7DD631E26A2256100ACA3A8 /* CitiesRouter.swift in Sources */,
