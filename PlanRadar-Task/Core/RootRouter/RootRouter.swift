@@ -17,7 +17,8 @@ enum RootRouter: Router {
     // MARK: - Properties
     
     var destinationViewController: UIViewController {
-        let rootNavigationController = UINavigationController(rootViewController: CitiesConfigurator.list.viewcontroller)
+        let rootViewController = CitiesConfigurator.list.viewcontroller
+        let rootNavigationController = UINavigationController(rootViewController: rootViewController)
         
         return rootNavigationController
     }

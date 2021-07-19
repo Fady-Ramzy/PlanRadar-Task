@@ -12,6 +12,7 @@ enum CitiesRequest: Request {
     // MARK: - Cases
     
     case details(city: String)
+    case weatherIcon(iconId: String)
 
     // MARK: - Properties
     
@@ -19,6 +20,8 @@ enum CitiesRequest: Request {
         switch self {
         case .details(let cityName):
             return "https://api.openweathermap.org/data/2.5/weather?q=\(cityName)&appid=f5cb0b965ea1564c50c6f1b74534d823"
+        case .weatherIcon(let iconId):
+            return "http://openweathermap.org/img/w/\(iconId).png"
         }
     }
 
@@ -29,6 +32,8 @@ enum CitiesRequest: Request {
     var httpMethod: HttpMethod {
         switch self {
         case .details:
+            return .get
+        case .weatherIcon:
             return .get
         }
     }

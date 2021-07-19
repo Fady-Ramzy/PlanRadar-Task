@@ -13,7 +13,7 @@ enum CitiesConfigurator: Configurator {
     // MARK: - Cases
     
     case list
-    case details
+    case details(city: CityUIModel)
     
     // MARK: - Properties
     
@@ -26,12 +26,15 @@ enum CitiesConfigurator: Configurator {
             viewController.viewModel = viewModel
             
             return viewController
-        case .details:
+        case .details(let city):
             let viewController = CityDetailsViewController()
-            let viewModel = CityDetailsViewModel()
+            let repository = CitiesRepository()
+            let viewModel = CityDetailsViewModel(city: city)
             viewController.viewModel = viewModel
             
-            return viewController
+            let navigationController = UINavigationController(rootViewController: viewController)
+            
+            return navigationController
         }
     }
 }

@@ -6,10 +6,38 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
-protocol CityDetailsViewModelProtocol {
-    
+protocol CityDetailsViewModelProtocol: ViewLifeCycleProtocol{
+    var cityObservable: Observable<CityUIModel> { get }
 }
 
-class CityDetailsViewModel: CityDetailsViewModelProtocol {
+class CityDetailsViewModel {
+    
+    // MARK: - Properties
+    
+    private let city: CityUIModel
+    private let disposeBag = DisposeBag()
+    
+    // MARK: Initializer
+    
+    init(city: CityUIModel) {
+        self.city = city
+    }
+}
+
+// MARK: - extensions
+
+extension CityDetailsViewModel: CityDetailsViewModelProtocol {
+    
+    // MARK: - Properties
+    
+    var cityObservable: Observable<CityUIModel> {
+        return Observable.create { observer in
+            observer.onNext(self.city)
+            
+            return Disposables.create()
+        }
+    }
 }

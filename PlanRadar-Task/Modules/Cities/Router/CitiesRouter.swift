@@ -13,7 +13,7 @@ enum CitiesRouter: Router {
     // MARK: - Cases
     
     case list
-    case details
+    case details(city: CityUIModel)
     
     // MARK: - Properties
     
@@ -21,8 +21,8 @@ enum CitiesRouter: Router {
         switch self {
         case .list:
             return CitiesConfigurator.list.viewcontroller
-        case .details:
-            return CitiesConfigurator.details.viewcontroller
+        case .details(let city):
+            return CitiesConfigurator.details(city: city).viewcontroller
         }
     }
     
