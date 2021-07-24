@@ -19,6 +19,11 @@ struct Main: Mappable {
     
     init?(map: Map) {}
     
+    init(temprature: Double?, humidity: Int?) {
+        self.temprature = temprature
+        self.humidity = humidity
+    }
+    
     // MARK: - Mapping Methods
     
     mutating func mapping(map: Map) {

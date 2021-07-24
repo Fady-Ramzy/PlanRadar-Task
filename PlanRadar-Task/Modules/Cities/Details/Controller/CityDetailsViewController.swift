@@ -10,6 +10,13 @@ import RxCocoa
 import RxSwift
 import Kingfisher
 
+protocol CityDeatilsViewProtocol {
+    var viewModel: CityDetailsViewModelProtocol? { set get}
+    
+    func addCloseBarButton()
+}
+
+
 class CityDetailsViewController: UIViewController {
 
     // MARK: - IBOutlet
@@ -34,8 +41,10 @@ class CityDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        subscribeOnEvents()
-        _ = viewModel?.viewDidLoad()
+        viewModel?.viewDidLoad()?.subscribe(onNext: { [weak self] in
+            self?.subscribeOnEvents()
+            self?.addCloseBarButton()
+        }).disposed(by: disposeBag)
     }
     
     // MARK: - Methods
@@ -54,9 +63,6 @@ class CityDetailsViewController: UIViewController {
     }
     
     func subscribeOnEvents() {
-        viewModel?.viewDidLoad().subscribe(onNext: { [weak self] in
-            self?.addCloseBarButton()
-        }).disposed(by: disposeBag)
         viewModel?.cityObservable.subscribe(onNext: { [weak self] city in
             guard let self = self else { return }
             

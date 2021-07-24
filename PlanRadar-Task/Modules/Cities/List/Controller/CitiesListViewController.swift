@@ -34,7 +34,7 @@ class CitiesListViewController: UITableViewController {
     }
     
     private func subscribeOnEvents() {
-        viewModel?.viewDidLoad().subscribe(onNext: { [weak self] in
+        viewModel?.viewDidLoad()?.subscribe(onNext: { [weak self] in
             self?.localize()
             self?.addNavigationBarButtonItem()
             self?.registerTableViewCell()
@@ -77,6 +77,8 @@ extension CitiesListViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel?.didSelectCity(at: indexPath.row).subscribe(onNext: { [weak self] router in
             self?.navigate(to: router)
+        }, onError: { [weak self] error in
+            self?.showErrorAlertController(with: error)
         }).disposed(by: disposeBag)
     }
     

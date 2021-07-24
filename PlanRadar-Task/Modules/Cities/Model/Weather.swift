@@ -19,6 +19,11 @@ struct Weather: Mappable {
     
     init?(map: Map) {}
     
+    init(description: String?, icon: String?) {
+        self.description = description
+        self.icon = icon
+    }
+    
     // MARK: - Mapping Methods
     
     mutating func mapping(map: Map) {

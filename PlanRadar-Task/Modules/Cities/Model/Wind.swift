@@ -16,8 +16,10 @@ struct Wind: Mappable {
     
     // MARK: - Initializer
     
-    init?(map: Map) {
-        
+    init?(map: Map) {}
+    
+    init(speed: Double?) {
+        self.speed = speed
     }
     
     // MARK: - Mapping Methods

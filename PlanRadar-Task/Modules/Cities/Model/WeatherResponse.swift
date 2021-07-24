@@ -20,6 +20,12 @@ struct WeatherResponse: Mappable  {
     
     init?(map: Map) {}
     
+    init(weather: [Weather]?, main: Main?, wind: Wind?) {
+        self.weather = weather
+        self.main = main
+        self.wind = wind
+    }
+    
     // MARK: - Mapping Methods
     
     mutating func mapping(map: Map) {

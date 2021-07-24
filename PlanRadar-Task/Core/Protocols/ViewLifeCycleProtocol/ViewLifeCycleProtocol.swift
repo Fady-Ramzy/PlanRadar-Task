@@ -10,15 +10,15 @@ import RxSwift
 import RxCocoa
 
 protocol ViewLifeCycleProtocol {
-    func viewDidLoad() -> Observable<Void>
-    func viewWillAppear() -> Observable<Void>
-    func viewDidAppear() -> Observable<Void>
+    func viewDidLoad() -> Observable<Void>?
+    func viewWillAppear() -> Observable<Void>?
+    func viewDidAppear() -> Observable<Void>?
 }
 
 // MARK: - extensions
 
 extension ViewLifeCycleProtocol {
-    func viewDidLoad() -> Observable<Void> {
+    func viewDidLoad() -> Observable<Void>? {
         return Observable.create { observer in
             observer.onNext(())
             
@@ -26,7 +26,7 @@ extension ViewLifeCycleProtocol {
         }
     }
     
-    func viewWillAppear() -> Observable<Void> {
+    func viewWillAppear() -> Observable<Void>? {
         return Observable.create { observer in
             observer.onNext(())
             
@@ -34,7 +34,7 @@ extension ViewLifeCycleProtocol {
         }
     }
     
-    func viewDidAppear() -> Observable<Void> {
+    func viewDidAppear() -> Observable<Void>? {
         return Observable.create { observer in
             observer.onNext(())
             

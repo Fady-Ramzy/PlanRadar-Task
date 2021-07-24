@@ -44,9 +44,20 @@ class CitiesListViewModel {
     private var cityNameRelay = BehaviorRelay<String>(value: "")
     private let errorPublishSubject = PublishSubject<Error>()
     private let citiesNames = PublishSubject<[String]>()
-    private var names: [String] = []
+    var names: [String] = []
     private var cities: [CityUIModel] = []
     private let disposeBag = DisposeBag()
+    
+    enum CitiesListError: Error, LocalizedError {
+        case selectedDetailsError
+        
+        var errorDescription: String? {
+            switch self {
+            case .selectedDetailsError:
+                return "No details for the selected city"
+            }
+        }
+    }
     
     // MARK: - Initializer
     
@@ -55,6 +66,18 @@ class CitiesListViewModel {
     }
     
     // MARK: - Methods
+    
+    func citiesWithoutDeletedCity(at index: Int, storedCityNames: [String]) -> [String]? {
+        var namesList = storedCityNames
+        
+        let isIndexValid = storedCityNames.indices.contains(index)
+        
+        guard isIndexValid else { return nil }
+        
+        namesList.remove(at: index)
+        
+        return namesList
+    }
     
     func fetchCityWeatherDetails() {
         showLoadingIndicator()
@@ -109,7 +132,14 @@ extension CitiesListViewModel: CitiesListViewModelProtocol {
     }
     
     func didSelectCity(at index: Int) -> Observable<Router> {
+        let isIndexValid = self.cities.indices.contains(index)
+        
         return Observable.create { [weak self] observer in
+            guard isIndexValid else {
+                observer.onError(CitiesListError.selectedDetailsError)
+                
+                return Disposables.create()
+            }
             observer.onNext(CitiesRouter.details(city: (self?.cities[index])!))
             
             return Disposables.create()
@@ -117,8 +147,12 @@ extension CitiesListViewModel: CitiesListViewModelProtocol {
     }
     
     func deleteCity(at index: Int) {
-        names.remove(at: index)
-        citiesNames.onNext(names)
+        guard let cities = citiesWithoutDeletedCity(at: index, storedCityNames: names) else {
+            errorPublishSubject.onNext(CitiesListError.selectedDetailsError)
+            
+            return
+        }
+        
+        citiesNames.onNext(cities)
     }
 }
-
