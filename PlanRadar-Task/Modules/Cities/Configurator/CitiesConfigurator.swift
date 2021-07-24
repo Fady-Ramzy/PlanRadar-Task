@@ -28,7 +28,6 @@ enum CitiesConfigurator: Configurator {
             return viewController
         case .details(let city):
             let viewController = CityDetailsViewController()
-            let repository = CitiesRepository()
             let viewModel = CityDetailsViewModel(city: city)
             viewController.viewModel = viewModel
             

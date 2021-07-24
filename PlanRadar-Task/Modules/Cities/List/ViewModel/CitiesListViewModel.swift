@@ -20,7 +20,7 @@ struct CityUIModel {
     var imageURL: String?
 }
 
-protocol CitiesListViewModelProtocol: ViewLifeCycleProtocol {
+protocol CitiesListViewModelProtocol: ViewLifeCycleProtocol, LoadingIndicatorProtocol {
     
     // MARK: - Properties
     
@@ -57,7 +57,7 @@ class CitiesListViewModel {
     // MARK: - Methods
     
     func fetchCityWeatherDetails() {
-        SVProgressHUD.show()
+        showLoadingIndicator()
         repository.fetchCityWeather(with: cityNameRelay.value) { [weak self] response, error in
             guard let self = self else { return }
             
@@ -70,8 +70,7 @@ class CitiesListViewModel {
                 self.cities.append(city)
                 // Save in Core data
             }
-            
-            SVProgressHUD.dismiss()
+            self.hideLoadingIndicator()
         }
     }
 }
