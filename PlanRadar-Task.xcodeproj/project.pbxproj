@@ -233,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				C7B3D1DF26AC528D00E1C70A /* Repository */,
-				C79E6A5126AC3FCE00A1A994 /* Details */,
 				C79E6A5026AC3FC100A1A994 /* List */,
 			);
 			path = Cities;
@@ -245,13 +244,6 @@
 				C7B3D1DD26AC501500E1C70A /* CitiesListViewModelTest.swift */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		C79E6A5126AC3FCE00A1A994 /* Details */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Details;
 			sourceTree = "<group>";
 		};
 		C7B3D1DF26AC528D00E1C70A /* Repository */ = {

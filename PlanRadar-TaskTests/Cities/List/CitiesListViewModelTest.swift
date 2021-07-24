@@ -36,7 +36,7 @@ class CitiesListViewModelTest: XCTestCase {
     // MARK: - Life Cycle
     
     override func setUpWithError() throws {
-        citiesNames = ["Cairo", "Alexandria"]
+        citiesNames = ["Cairo"]
         disposeBag = DisposeBag()
         repository = CitiesRepositoryMock()
         viewModel = CitiesListViewModel(repository: repository)
@@ -119,6 +119,7 @@ class CitiesListViewModelTest: XCTestCase {
     
     func test_citiesListViewModel_citiesWithoutDeletedCity_atInvalidIndex_shouldReturnError() {
         // Given
+        
         // When
         
         let cities = viewModel.citiesWithoutDeletedCity(at: 1, storedCityNames: citiesNames)
