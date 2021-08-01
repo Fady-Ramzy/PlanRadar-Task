@@ -142,9 +142,9 @@ class CitiesListViewModelTest: XCTestCase {
         
         // Then
         
-        observable.subscribe { _ in
-            XCTAssertTrue(true)
-        }.disposed(by: disposeBag)
+//        observable.subscribe { _ in
+//            XCTAssertTrue(true)
+//        }.disposed(by: disposeBag)
     }
     
     func test_citiesListViewModel_addAlertButtonPressed_shouldFetchWeatherDetails() {
