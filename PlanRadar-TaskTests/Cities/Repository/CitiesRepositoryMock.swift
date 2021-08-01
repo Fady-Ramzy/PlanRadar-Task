@@ -18,6 +18,10 @@ class CitiesRepositoryMock: CitiesRepositoryProtocol {
     
     // MARK: - Methods
     
+    func fetchLocalCitiesWeatherData(with viewcontext: NSManagedObjectContext, fetchRequest: NSFetchRequest<NSFetchRequestResult>, completionHandler: ([NSFetchRequestResult]?, Error?) -> Void) {
+        
+    }
+    
     func saveObject(viewContext: NSManagedObjectContext, completionHandler: (Bool, Error?) -> Void) {
         
     }

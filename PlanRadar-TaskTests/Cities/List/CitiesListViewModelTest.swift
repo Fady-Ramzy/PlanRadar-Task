@@ -112,12 +112,12 @@ class CitiesListViewModelTest: XCTestCase {
         
         // When
         
-        viewModel.deleteCity(at: 1)
+        let cities = viewModel.citiesWithoutDeletedCity(at: 1, storedCityNames: viewModel.names)
         
         // Then
         
         viewModel.citiesNamesObservable.subscribe(onNext: { names in
-            XCTAssertEqual(self.viewModel.names.count, 1)
+            XCTAssertEqual(cities?.count, 1)
         }).disposed(by: disposeBag)
     }
     
@@ -133,16 +133,6 @@ class CitiesListViewModelTest: XCTestCase {
         XCTAssertNil(cities)
     }
     
-    func test_citiesListViewModel_citiesWithoutDeletedCity_atValidIndex_shouldDeleteSelectedCity() {
-        // Given
-        // When
-        
-       let cities = viewModel.citiesWithoutDeletedCity(at: 1, storedCityNames: citiesNames)
-        
-        // Then
-        
-        XCTAssertEqual(cities?.count, 1)
-    }
     
     func test_citiesViewModel_addButtonPressed_shouldTriggerPressAction() {
         // Given
