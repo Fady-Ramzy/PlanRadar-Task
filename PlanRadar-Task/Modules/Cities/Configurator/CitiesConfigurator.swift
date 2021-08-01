@@ -7,22 +7,23 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 enum CitiesConfigurator: Configurator {
     
     // MARK: - Cases
     
-    case list
+    case list(persistentContainer: NSPersistentContainer)
     case details(city: CityUIModel)
     
     // MARK: - Properties
     
     var viewcontroller: UIViewController {
         switch self {
-        case .list:
+        case .list(let persistentContainer):
             let viewController = CitiesListViewController()
             let repository = CitiesRepository()
-            let viewModel = CitiesListViewModel(repository: repository)
+            let viewModel = CitiesListViewModel(repository: repository, viewcontext: persistentContainer.viewContext)
             viewController.viewModel = viewModel
             
             return viewController

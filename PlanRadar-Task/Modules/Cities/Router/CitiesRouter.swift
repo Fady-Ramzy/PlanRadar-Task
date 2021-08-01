@@ -7,20 +7,21 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 enum CitiesRouter: Router {
     
     // MARK: - Cases
     
-    case list
+    case list(persistentContainer: NSPersistentContainer)
     case details(city: CityUIModel)
     
     // MARK: - Properties
     
     var destinationViewController: UIViewController {
         switch self {
-        case .list:
-            return CitiesConfigurator.list.viewcontroller
+        case .list(let persistentContainer):
+            return CitiesConfigurator.list(persistentContainer: persistentContainer).viewcontroller
         case .details(let city):
             return CitiesConfigurator.details(city: city).viewcontroller
         }

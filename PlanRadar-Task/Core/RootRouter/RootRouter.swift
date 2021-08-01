@@ -17,7 +17,8 @@ enum RootRouter: Router {
     // MARK: - Properties
     
     var destinationViewController: UIViewController {
-        let rootViewController = CitiesConfigurator.list.viewcontroller
+        let persistentContainer = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+        let rootViewController = CitiesConfigurator.list(persistentContainer: persistentContainer).viewcontroller
         let rootNavigationController = UINavigationController(rootViewController: rootViewController)
         
         return rootNavigationController

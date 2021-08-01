@@ -22,6 +22,8 @@
 		C79E6A4E26AC370A00A1A994 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79E6A4D26AC370A00A1A994 /* LoadingIndicator.swift */; };
 		C7B3D1DE26AC501500E1C70A /* CitiesListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B3D1DD26AC501500E1C70A /* CitiesListViewModelTest.swift */; };
 		C7B3D1E126AC52A200E1C70A /* CitiesRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B3D1E026AC52A200E1C70A /* CitiesRepositoryMock.swift */; };
+		C7C3568B26B3539F00891A9D /* PlanRadar-Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C7C3568926B3539F00891A9D /* PlanRadar-Task.xcdatamodeld */; };
+		C7C356A326B4453400891A9D /* CityWeather+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C356A126B4453400891A9D /* CityWeather+CoreDataClass.swift */; };
 		C7DD62E626A1E33700ACA3A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */; };
 		C7DD62EA26A1E33700ACA3A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DD62E926A1E33700ACA3A8 /* ViewController.swift */; };
 		C7DD62ED26A1E33700ACA3A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7DD62EB26A1E33700ACA3A8 /* Main.storyboard */; };
@@ -83,6 +85,8 @@
 		C79E6A4D26AC370A00A1A994 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		C7B3D1DD26AC501500E1C70A /* CitiesListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewModelTest.swift; sourceTree = "<group>"; };
 		C7B3D1E026AC52A200E1C70A /* CitiesRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesRepositoryMock.swift; sourceTree = "<group>"; };
+		C7C3568A26B3539F00891A9D /* PlanRadar-Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "PlanRadar-Task.xcdatamodel"; sourceTree = "<group>"; };
+		C7C356A126B4453400891A9D /* CityWeather+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CityWeather+CoreDataClass.swift"; path = "PlanRadar-Task/Modules/Cities/CoreDataModels/CityWeather+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C7DD62E226A1E33700ACA3A8 /* PlanRadar-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlanRadar-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7DD62E526A1E33700ACA3A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7DD62E926A1E33700ACA3A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -254,9 +258,17 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		C7C3569826B442AB00891A9D /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
 		C7DD62D926A1E33700ACA3A8 = {
 			isa = PBXGroup;
 			children = (
+				C7C356A126B4453400891A9D /* CityWeather+CoreDataClass.swift */,
 				C7DD62E426A1E33700ACA3A8 /* PlanRadar-Task */,
 				C7DD62FB26A1E33900ACA3A8 /* PlanRadar-TaskTests */,
 				C7DD630626A1E33900ACA3A8 /* PlanRadar-TaskUITests */,
@@ -287,6 +299,7 @@
 				C7DD62EE26A1E33900ACA3A8 /* Assets.xcassets */,
 				C7DD62F026A1E33900ACA3A8 /* LaunchScreen.storyboard */,
 				C7DD62F326A1E33900ACA3A8 /* Info.plist */,
+				C7C3568926B3539F00891A9D /* PlanRadar-Task.xcdatamodeld */,
 			);
 			path = "PlanRadar-Task";
 			sourceTree = "<group>";
@@ -365,6 +378,7 @@
 		C7DD631C26A2254700ACA3A8 /* Cities */ = {
 			isa = PBXGroup;
 			children = (
+				C7C3569826B442AB00891A9D /* CoreDataModels */,
 				C7DD631A26A2250800ACA3A8 /* Router */,
 				C7DD631B26A2251000ACA3A8 /* Configurator */,
 				C7DD634426A2424F00ACA3A8 /* Repository */,
@@ -706,6 +720,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C3568B26B3539F00891A9D /* PlanRadar-Task.xcdatamodeld in Sources */,
+				C7C356A326B4453400891A9D /* CityWeather+CoreDataClass.swift in Sources */,
 				C79E6A4E26AC370A00A1A994 /* LoadingIndicator.swift in Sources */,
 				C7DD634326A231FB00ACA3A8 /* CityDetailsViewModel.swift in Sources */,
 				C793C3FF26A36C17008DAAB8 /* Request.swift in Sources */,
@@ -1066,6 +1082,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C7C3568926B3539F00891A9D /* PlanRadar-Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C7C3568A26B3539F00891A9D /* PlanRadar-Task.xcdatamodel */,
+			);
+			currentVersion = C7C3568A26B3539F00891A9D /* PlanRadar-Task.xcdatamodel */;
+			path = "PlanRadar-Task.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C7DD62DA26A1E33700ACA3A8 /* Project object */;
 }

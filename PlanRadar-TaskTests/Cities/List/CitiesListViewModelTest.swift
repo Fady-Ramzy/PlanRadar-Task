@@ -8,12 +8,14 @@
 import XCTest
 import RxSwift
 import RxCocoa
+import CoreData
 @testable import PlanRadar_Task
 
 class CitiesListViewModelTest: XCTestCase {
     
     // MARK: - Properties
     
+    var viewcontextMock: NSManagedObjectContext!
     var viewModel: CitiesListViewModel!
     var repository: CitiesRepositoryMock!
     var disposeBag: DisposeBag!
@@ -39,11 +41,13 @@ class CitiesListViewModelTest: XCTestCase {
         citiesNames = ["Cairo"]
         disposeBag = DisposeBag()
         repository = CitiesRepositoryMock()
-        viewModel = CitiesListViewModel(repository: repository)
+        viewcontextMock = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        viewModel = CitiesListViewModel(repository: repository, viewcontext: viewcontextMock)
     }
 
     override func tearDownWithError() throws {
         repository = nil
+        viewcontextMock = nil
         citiesNames = nil
         viewModel = nil
         disposeBag = nil
